@@ -14,3 +14,182 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
+/* BUTTON 1 */
+
+.btn-1 {
+    text-decoration: none;
+    color: #272727;
+    font-size: 20px;
+    border: 3px solid #272727;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1.5s;
+}
+
+.btn-1:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #272727;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+
+.btn-1:hover:before {
+    transform: rotate(0deg);
+}
+
+.btn-1:hover {
+    color: aliceblue;
+}
+
+
+/* BUTTON 2 */
+
+
+.btn-2 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1680b1;
+    font-size: 20px;
+    border: 3px solid #1680b1;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.btn-2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1680b1;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.btn-2:hover:before {
+    transform: translateX(0);
+}
+
+.btn-2:hover {
+    color: #fff;
+}
+
+
+/* BUTTON 3 */
+
+.btn-3 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #262626;
+    font-size: 20px;
+    border: 3px solid #262626;
+    padding: 10px 20px;
+    position: relative;
+    transition: 1s;
+}
+
+.btn-3:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: rotateX(90deg);
+    z-index: -1;
+}
+
+.btn-3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: rotateY(90deg);
+    z-index: -1;
+}
+
+.btn-3:hover:before {
+    transform: rotateX(0deg);
+}
+
+.btn-3:hover:after {
+    transform: rotateY(0deg);
+}
+
+.btn-3:hover{
+    color: #fff;
+}
+
+
+/* BUTTON 4 */
+
+.btn-4 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #36d136;
+    font-size: 20px;
+    border: 3px solid #36d136;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.btn-4:hover {
+    font-weight: 900;
+    letter-spacing: 5px;
+    border: 6px solid #36d136;
+}
+
+
+/* BUTTON 5 */
+
+.btn-5 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border: 3px solid #000;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.btn-5:before {
+    content: 'YEAH';
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: translateY(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-5:hover:before {
+    transform: translateY(0);
+}
