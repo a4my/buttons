@@ -193,3 +193,225 @@ body {
 .btn-5:hover:before {
     transform: translateY(0);
 }
+
+
+/* BUTTON 6 */
+
+.btn-6 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #942323;
+    font-size: 20px;
+    border: 3px solid #942323;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.btn-6:hover {
+    background-color: #000;
+    border: 3px solid #000;
+}
+
+.btn-6:before {
+    content: '';
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);   
+    transition: all 0.3s;
+}
+
+.btn-6:hover:before {
+    transform: translateX(100%) rotate(45deg);
+}
+
+
+/* BUTTON 7 */
+
+.btn-7 {
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #262626;
+    font-size: 20px;
+    border: 3px solid #262626;
+    padding: 10px 20px;
+    position: relative;
+    color: transparent;
+    overflow: hidden;
+}
+
+.btn-7:before {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa65;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.btn-7:after {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa65;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: translate(-100%, 100%);
+}
+
+.btn-7:hover:before {
+    transform: translate(100%, -100%);
+}
+
+.btn-7:hover:after {
+    transform: translate(0, 0);
+}
+
+
+
+
+/* BUTTON 8 */
+
+.btn-8 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #262626;
+    font-size: 20px;
+    border: 3px solid #262626;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.btn-8:before {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(5);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.btn-8:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+
+/* BUTTON 9 */
+
+.btn-9 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #880f64;
+    font-size: 20px;
+    border: 3px solid #880f64;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.btn-9:hover {
+    color: #fff;
+}
+
+.btn-9:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #880f64;
+    transition: all 0.5s;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    height: 0%;
+    transition: all 0.5s;
+}
+
+.btn-9:hover:before {
+    height: 190%;
+}
+
+
+/* BUTTON 10 */
+
+.btn-10 {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s;
+    /* overflow: hidden; */
+}
+
+.btn-10:before {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2ce771;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+.btn-10:after {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e7322c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+}
+
+.btn-10:hover:before, .btn-10:hover:after {
+    transform: rotateX(0);
+}
